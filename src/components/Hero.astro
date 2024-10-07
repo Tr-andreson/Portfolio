@@ -1,43 +1,43 @@
 <section
-  class="w-full flex flex-col gap-5 justify-center items-center px-4 py-32"
+  class="w-full flex flex-col gap-8 justify-center items-center px-6 py-36 bg-white text-center"
 >
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-4">
     <h1
-      class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter text-pretty"
+      class="w-full max-w-2xl text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-800 fade-in-up"
     >
-      Always building things for the web.
+      Creating modern web experiences with simplicity.
     </h1>
     <p
-      class="w-full max-w-xl text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter text-balance"
+      class="w-full max-w-2xl text-base sm:text-lg md:text-xl font-light text-gray-500 fade-in-up delay-1"
     >
-      This is a simple portfolio template built with Astro and Tailwind CSS.
+      Hi, I'm Tushar Rawat. I design and build seamless web applications that solve real-world problems.
     </p>
   </div>
-  <div class="w-full flex flex-wrap gap-3 items-center justify-center">
+  <div class="w-full flex flex-wrap gap-4 items-center justify-center">
     <a
-      href="https://x.com/gonzalochale"
+      href="https://x.com/tusharrawat"
       target="_blank"
       rel="noopener noreferrer"
-      class="relative w-fit flex justify-center items-center px-4 py-2 sm:px-6 sm:py-3 sm:text-lg font-medium text-background bg-primary rounded-full perfect-shadow"
+      class="relative w-fit flex justify-center items-center px-6 py-3 sm:px-8 sm:py-4 sm:text-lg font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-colors duration-300 fade-in-up delay-2"
     >
       Connect with me
-      <div
-        class="z-[-1] bg-gradient-to-b from-secondary via-primary to-primary absolute w-[calc(100%-4px)] h-[calc(100%-4px)] rounded-full border-t-2 border-secondary"
-      >
-      </div>
+    </a>
+    <a
+      href="https://github.com/tusharrawat"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative w-fit flex justify-center items-center px-6 py-3 sm:px-8 sm:py-4 sm:text-lg font-medium text-black border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-300 fade-in-up delay-3"
+    >
+      View GitHub
     </a>
   </div>
 </section>
 
 <style>
-  @keyframes heroIn {
+  @keyframes fadeUp {
     0% {
       opacity: 0;
-      transform: translateY(0.5rem);
-    }
-    60% {
-      opacity: 1;
-      transform: translateY(-0.05rem);
+      transform: translateY(2rem);
     }
     100% {
       opacity: 1;
@@ -45,16 +45,20 @@
     }
   }
 
-  h1 {
+  .fade-in-up {
     opacity: 0;
-    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) forwards;
+    animation: fadeUp 0.8s ease-out forwards;
   }
-  p {
-    opacity: 0;
-    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.3s forwards;
+
+  .delay-1 {
+    animation-delay: 0.2s;
   }
-  a {
-    opacity: 0;
-    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.6s forwards;
+
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-3 {
+    animation-delay: 0.6s;
   }
 </style>
